@@ -1,0 +1,85 @@
+header.other {
+  position: initial;
+  background-color: var(--color-white1);
+}
+nav{
+  position: initial;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.profile-link.other a {
+  color:var(--color-primary2);
+  border-bottom: 2px solid var(--color-primary2);
+}
+
+/*Section principal blog*/
+section.blogs-new {
+  background-color: var(--color-white2);
+}
+.blogs-new h4 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.blogs-new-content {
+  background-color: var(--color-white2);
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-bottom: 5rem;
+}
+.blogs-new-text {
+  margin: 0 3rem;
+}
+.blogs-new-text div {
+  height: 6rem;
+  overflow: hidden;  
+  text-overflow: ellipsis; 
+  margin-bottom: 2.4rem;
+}
+
+
+/*Section de posts*/
+.posts{
+  background-color: var(--color-white1);
+}
+.posts h4 {
+  text-align: center;
+  border-bottom: 2px solid var(--color-white2);
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 3rem;
+}
+
+.posts-grid {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 40px;
+  padding-bottom: 6rem;
+}
+
+.post-container h3 {
+  margin: 1.2rem 0;
+}
+.post-container p {
+  margin: 0.8rem 0;
+}
+
+/*footer section*/
+footer {
+  margin: 0;
+  padding: 0;
+  border-top: 4rem solid var(--color-primary1);
+  background-color: var(--color-primary2);
+}
+
+footer p {
+  color: var(--color-white1);
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2rem;
+  font-family: var(--font3);
+  margin: 0;
+}
