@@ -1,0 +1,140 @@
+
+
+.primary-text {
+  color: var(--color-primary);
+}
+span.flaticon {
+  color: var(--color-text1);
+}
+span.flaticon:hover {
+  color: var(--color-hover);
+}
+
+/*---------BUTTONS---------*/
+
+
+
+/*IMGS*/
+figure.icon {
+  width: 3rem;
+}
+img {
+  width: 100%;  
+}
+
+
+img.icon svg {
+  color: red;
+}
+img.icon:hover {
+  color: red;
+}
+
+.flex-center {
+ display: flex;
+ justify-content: center;
+}
+/*-------COMPONENT---------*/
+.outline-border {
+  max-width: 40rem;
+  min-width: 10rem;
+  max-height: 40rem;
+  min-height: 10rem;
+  position: relative;
+  border-radius: var(--border-radius);
+  margin-bottom:20px;
+}
+.outline-border::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 15px;
+  left: 15px;
+  border-radius: 4px;
+  border: 2px solid var(--color-primary);
+  z-index: -1;
+}
+.outline-border:hover::after {
+  top: 10px;
+  left: 10px;
+}
+.outline-border:hover .outline-border-hover {
+  display: initial;
+}
+.outline-border-hover {
+  /*display: none;*/
+  position: absolute;
+  background: var(--color-hover);
+  left: 0; right: 0; bottom: 0; top: 0;
+  z-index: 3;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+}
+.outline-border-content {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+
+/*---------PROFILE COMPONENT---------*/
+figure.profile {
+  box-sizing: border-box;
+  position: absolute;
+  width: 140%;
+  left: -20%; right: -10px;
+}
+.outline-border.profile {
+  width: 30rem;
+  height: 30rem;
+  max-width: 40rem;
+  min-width: 10rem;
+  max-height: 40rem;
+  min-height: 10rem;
+}
+
+
+
+/*---------PROJECT COMPONENT---------*/
+figure.project img {
+  height: 100%;
+  width: initial;
+}
+figure.project {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.outline-border.project {
+  width: 50rem;
+  height: 30rem;
+}
+
+.grid-container {
+  max-width: 980px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+
+
+/*---------SECTIONS---------*/
+section {
+  padding: 0 2rem;
+}
+
+
+
+
+
+footer  {
+  text-align: center;
+}
+footer .icons {
+  padding: 2rem;
+
+}
