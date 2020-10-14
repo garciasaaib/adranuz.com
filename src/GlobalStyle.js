@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
 
 /*------ Styles------*/
-:root {
+/*:root {
   --color-bg: #252E48;
   --color-text1: #9AA3A3;
   --color-text2: #D8E9E9;
@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
   --border-radius: 4px;
 
   --icon-width: 3rem;
-}
+}*/
 
 /*------TAG Styles------*/
 * {

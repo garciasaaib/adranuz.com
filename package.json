@@ -11,7 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/adranuz/garden-script-blog"
   },
-  "keywords": ["javascript", "react", "styled-components", "portfolio"],
+  "keywords": [
+    "javascript",
+    "react",
+    "styled-components",
+    "portfolio"
+  ],
   "author": "@adreanzoe",
   "license": "MIT",
   "bugs": {

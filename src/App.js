@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <GlobalStyle>
-
+        
         <h1>Hola que hace</h1>
       </GlobalStyle>
     </>
