@@ -3,9 +3,10 @@ import styled from 'styled-components'
 
 const HeaderStyled = styled.div`
   margin: auto;
+  background: red;
 `
 
-function Wrapper({children}) {
+function Header() {
   return (
     <HeaderStyled>
       <h1>Este es un  header</h1>
@@ -13,4 +14,4 @@ function Wrapper({children}) {
   )
 }
 
-export default Wrapper
+export default Header

@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
 
 /*------ Styles------*/
-/*:root {
+:root {
   --color-bg: #252E48;
   --color-text1: #9AA3A3;
   --color-text2: #D8E9E9;
@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
   --border-radius: 4px;
 
   --icon-width: 3rem;
-}*/
+}
 
 /*------TAG Styles------*/
 * {
@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
 }
 html {
-  font-size: 62.5%; /* 1em = 10px */
+  font-size: 62.5%; /* 1rem = 10px */
   background-color: var(--color-bg);
   font-family: var(--font3);
   color: var(--color-text2);
@@ -67,10 +67,11 @@ p {
   color: var(--color-text1);
 }
 small {
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 b {
   color: var(--color-primary);
+  font-weight: normal;
 }
 a {
   text-decoration: none;
@@ -91,5 +92,9 @@ img {
   width: 100%;
 }
 
+.flex-center{
+  display: flex;
+  justify-content:center;
+}
 
 `

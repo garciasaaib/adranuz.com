@@ -3,13 +3,14 @@ import styled from 'styled-components'
 
 const WrapperStyled = styled.div`
   margin: auto;
+  border: 1px solid teal;
+  margin: 2rem;
 `
 
 function Wrapper({children}) {
   return (
     <WrapperStyled>
       {children}
-      <h1>Hola que hace</h1>
     </WrapperStyled>
   )
 }
