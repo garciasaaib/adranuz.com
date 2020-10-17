@@ -1,6 +1,7 @@
 import React  from "react"
 import styled from "styled-components"
 import Section from "../components/sections/Section"
+import Profile from "../components/media/Profile"
 
 const ContentStyled = styled.div`
   margin: auto;
@@ -18,7 +19,9 @@ function Content() {
       </Section>
       <Section title="About">
         <p>My main area of experience is beeing a Front-End developer using languages, frameworks and other tools as:</p>
-        <div>Tecnologies</div>
+        <div>
+          <Profile />
+        </div>
       </Section>
       <Section title="Projects">
         <p>My main area of experience is beeing a Front-End developer using languages, frameworks and other tools as:</p>

@@ -84,9 +84,14 @@ button {
   color: var(--color-primary);
   cursor: pointer;
   font-family: var(--font3);
+  outline: none;
 }
 button:hover {
   background: var(--color-hover);
+}
+button:active {
+  /* background: var(--color-hover); */
+  color: var(---color-text2)
 }
 img {
   width: 100%;
