@@ -41,7 +41,7 @@ h1 {
 h2 {
   font-size: 3rem;
   margin-bottom: .7em;
-  color: var(--color-text1);
+  color: var(--color-text2);
 }
 h3 {
   font-size: 2.4rem;

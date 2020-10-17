@@ -1,10 +1,17 @@
 import React  from "react"
 import styled from "styled-components"
 import Section from "../components/sections/Section"
-import Profile from "../components/media/Profile"
+
+import ProfilePhoto from "../components/media/Profile"
+import SocialMediaContainer from "../components/media/SocialContainer"
+
 
 const ContentStyled = styled.div`
   margin: auto;
+  .align-center {
+    margin: auto;
+    display: flex;
+  }
 `
 
 function Content() {
@@ -19,8 +26,8 @@ function Content() {
       </Section>
       <Section title="About">
         <p>My main area of experience is beeing a Front-End developer using languages, frameworks and other tools as:</p>
-        <div>
-          <Profile />
+        <div class="align-center">
+          <ProfilePhoto />
         </div>
       </Section>
       <Section title="Projects">
@@ -29,8 +36,9 @@ function Content() {
       </Section>
       <Section title="Experience"></Section>
         <p>My main area of experience is beeing a Front-End developer using languages, frameworks and other tools as:</p>
-      <Section title="Get in Touch" align-center>
+      <Section title="Get in Touch" title-center>
         <p>My main area of experience is beeing a Front-End developer using languages, frameworks and other tools as:</p>
+        <SocialMediaContainer />
       </Section>
     </ContentStyled>
   )
