@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const WrapperStyled = styled.div`
   margin: auto;
   border: 1px solid teal;
-  margin: 2rem;
+  margin: 2rem 4rem;
 `
 
 function Wrapper({children}) {

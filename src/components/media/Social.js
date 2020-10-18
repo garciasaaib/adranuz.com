@@ -16,7 +16,7 @@ const SocialStyled = styled.div`
 function Social({imgSource, hrefSource}) {
   return (
     <SocialStyled>
-      <a href={hrefSource} _blank >
+      <a href={hrefSource} target="_blank" >
         <figure>
           <picture>
             <img src={imgSource} />

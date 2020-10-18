@@ -4,7 +4,7 @@ import Section from "../components/sections/Section"
 
 import ProfilePhoto from "../components/media/Profile"
 import SocialMediaContainer from "../components/media/SocialContainer"
-
+import NotesContainer from "../components/media/NotesContainer"
 
 const ContentStyled = styled.div`
   margin: auto;
@@ -24,19 +24,31 @@ function Content() {
         <p>I’m Mechatronics Engineer by my university, but I found in the web a way to make amazing things with just a computer and a good coffee.</p>
         <button>Contact me</button>
       </Section>
+      
       <Section title="About">
         <p>My main area of experience is beeing a Front-End developer using languages, frameworks and other tools as:</p>
-        <div class="align-center">
+        <div className="align-center">
           <ProfilePhoto />
         </div>
       </Section>
+      
+      <Section title="Docs & retakes">
+        <p>I ussually use the same code in different projects because I spent time searching how to do a thing, and when I found how to do it I save it in my favorite notes app <b>Notion.so</b>. Let's check some of them to use them.</p>
+        <NotesContainer />
+
+      </Section>
+      
       <Section title="Projects">
         <p>My main area of experience is beeing a Front-End developer using languages, frameworks and other tools as:</p>
         
       </Section>
-      <Section title="Experience"></Section>
+      
+      <Section title="Experience">
         <p>My main area of experience is beeing a Front-End developer using languages, frameworks and other tools as:</p>
-      <Section title="Get in Touch" title-center>
+      </Section>
+      
+      
+      <Section title="Get in Touch" titlecenter="true">
         <p>My main area of experience is beeing a Front-End developer using languages, frameworks and other tools as:</p>
         <SocialMediaContainer />
       </Section>

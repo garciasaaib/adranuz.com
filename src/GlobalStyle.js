@@ -7,10 +7,17 @@ export const GlobalStyle = createGlobalStyle`
   --color-bg: #252E48;
   --color-text1: #9AA3A3;
   --color-text2: #D8E9E9;
+  --color-text3: #252E48;
+  --color-text4: #6B6B6B;
   --colorblur: rgba(37,46,72,0.69);
-  --color-bg-white: F2F2F2;
+  --color-bg-white: #F2F2F2;
   --color-primary: #36B2BC;
-  --color-hover: rgba(54, 178, 188, 0.34);;
+  --color-hover: rgba(54, 178, 188, 0.34);
+
+  --color-note1: #F5F3C0;
+  --color-note2: #F5C0D7;
+  --color-note3: #C0F5C9;
+  --color-note4: #D5F09B;
 
   --font1: 'Roboto', sans-serif;
   --font2: 'Roboto Condensed', sans-serif;

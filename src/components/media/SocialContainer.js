@@ -1,12 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import SocialMedia from "../media/Social"
+import SocialMedia from "./Social"
 
 import twitterIcon from "../../assets/svg/twitter.svg"
 import linkedinIcon from "../../assets/svg/linkedin.svg"
 import whatsappIcon from "../../assets/svg/whatsapp.svg"
 import skypeIcon from "../../assets/svg/skype.svg"
-import youtubeIcon from "../../assets/svg/youtube.svg"
+import githubIcon from "../../assets/svg/github.svg"
 
 
 const SocialContainerStyled = styled.div`
@@ -29,12 +29,11 @@ function SocialContainer() {
   
   return (
     <SocialContainerStyled>
-      <twitterIcon />
       <SocialMedia imgSource={twitterIcon} hrefSource={mediaUrl.twitter} />
       <SocialMedia imgSource={linkedinIcon} hrefSource={mediaUrl.linkedin} />
       <SocialMedia imgSource={whatsappIcon} hrefSource={mediaUrl.whatsapp} />
       <SocialMedia imgSource={skypeIcon} hrefSource={mediaUrl.skype} />
-      <SocialMedia imgSource={youtubeIcon} hrefSource={mediaUrl.youtube} />
+      <SocialMedia imgSource={githubIcon} hrefSource={mediaUrl.github} />
     </SocialContainerStyled>
   )
 }
