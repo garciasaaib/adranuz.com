@@ -10,7 +10,9 @@ const SectionStyled = styled.div`
 function Section({children, title}) {
   return (
     <SectionStyled>
-      <h2>{title}</h2>
+      {title &&
+        <h2>{title}</h2>
+      }
       {children}
     </SectionStyled>
   )

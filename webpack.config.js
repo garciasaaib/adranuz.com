@@ -1,8 +1,17 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const path = require('path')
+const webpack = require('webpack')
+
+
 module.exports = {
+  devServer: {
+    port: 3000,
+    hot: true,
+  },
   entry: './src/index.js',
-  output: {filename: 'app.bundle.js'},
+  output: {
+    filename: 'app.bundle.js'
+  },
   module: {
     rules: [
       {
@@ -33,5 +42,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'public/index.html'
     }),
+    new webpack.HotModuleReplacementPlugin({})
   ],
 }

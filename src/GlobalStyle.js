@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 /* Creamos un entorno global de estilos, muy parecido a bootstrap */
 export const GlobalStyle = createGlobalStyle`
 
@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
   --colorblur: rgba(37,46,72,0.69);
   --color-bg-white: F2F2F2;
   --color-primary: #36B2BC;
-  --color-hover: rgba(54, 178, 188, 0.34);;
+  --color-hover: rgba(54, 178, 188, 0.34);
 
   --font1: 'Roboto', sans-serif;
   --font2: 'Roboto Condensed', sans-serif;
@@ -30,8 +30,9 @@ export const GlobalStyle = createGlobalStyle`
 html {
   font-size: 62.5%; /* 1rem = 10px */
   background-color: var(--color-bg);
-  font-family: var(--font3);
+  font-family: var(--font1);
   color: var(--color-text2);
+  min-width: 350px;
 }
 h1 {
   font-size: 3.6rem;
@@ -41,7 +42,7 @@ h1 {
 h2 {
   font-size: 3rem;
   margin-bottom: .7em;
-  color: var(--color-text1);
+  color: var(--color-text2);
 }
 h3 {
   font-size: 2.4rem;

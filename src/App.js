@@ -15,7 +15,7 @@ function App() {
       <Wrapper>
         <Header />
         <Content />
-        <Footer />
+        {/* <Footer /> */}
       </Wrapper>
     </>
   )

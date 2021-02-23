@@ -4,15 +4,20 @@ import Section from "../components/sections/Section"
 
 const ContentStyled = styled.div`
   margin: auto;
+  /* filter: blur(4px); */
+  b {
+    margin-bottom: 0;
+  }
 `
 
 function Content() {
+  
   return (
     <ContentStyled>
       <Section>
         <p><b>Hello, my name is</b></p>
         <h2>Adrian Garcia</h2>
-        <h3>I develop on the internet <br/> with JavaScript</h3>
+        <h3>I Develop on the Internet <br/> with JavaScript</h3>
         <p>I’m Mechatronics Engineer by my university, but I found in the web a way to make amazing things with just a computer and a good coffee.</p>
         <button>Contact me</button>
       </Section>
