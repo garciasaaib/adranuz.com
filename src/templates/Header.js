@@ -1,9 +1,10 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
 import styled from 'styled-components'
 import logo from "../assets/icons/main.svg"
 import burger from "../assets/icons/burguer.svg"
 import ex from "../assets/icons/close.svg"
 import arrow from "../assets/icons/arrow.svg"
+import { MenuContext } from "../contexts/MenuContext";
 
 const HeaderStyled = styled.div`
   margin: auto;
@@ -12,12 +13,17 @@ const HeaderStyled = styled.div`
   margin-bottom:4.6rem;
   position: relative;
 
+  .Nav__hamburger{
+    position: relative;
+    z-index: 2;
+  }
+
   img {
     height: 5rem;
     width: 5rem;
     margin: 0;
   }
-  
+
   .NavList {
     position: fixed;
     top: 8vh;
@@ -25,7 +31,7 @@ const HeaderStyled = styled.div`
     right: 0;
     padding: 4rem;
     text-align: right;
-
+    z-index: 1;
 
     & ul {
       list-style:none;
@@ -49,19 +55,20 @@ const HeaderStyled = styled.div`
 `
 
 function Header() {
-  const [menu, setMenu] = useState(false);
+  const {menuOpen, setMenuOpen} = useContext(MenuContext)
 
   const toggleMenu = () => {
-    setMenu(!menu)
-  } 
+    setMenuOpen((_isBlurred)=>!_isBlurred)
+  }
+
   return (
     <HeaderStyled>
       <div className="Logo">
         <img src={logo} />
       </div>
       <div className="Nav">
-        <img src={menu ? ex : burger} onClick={toggleMenu}/>
-        {menu && 
+        <img className="Nav__hamburger" src={menuOpen ? ex : burger} onClick={toggleMenu}/>
+        {menuOpen && 
           <div className="NavList">
             <ul>
               <li><a href="#">Home <img className="arrow" src={arrow} /></a></li>

@@ -1,8 +1,10 @@
-import React  from "react"
+import React, {useContext}  from "react"
 import styled from "styled-components"
 import Section from "../components/sections/Section"
+import {MenuContext} from '../contexts/MenuContext'
 
 const ContentStyled = styled.div`
+  filter: ${props => props.isBlurred && 'blur(10px)'};
   margin: auto;
   /* filter: blur(4px); */
   b {
@@ -11,9 +13,10 @@ const ContentStyled = styled.div`
 `
 
 function Content() {
-  
+  const {menuOpen: isBlurred} = useContext(MenuContext)
+  console.log({isBlurred})
   return (
-    <ContentStyled>
+    <ContentStyled isBlurred={isBlurred}>
       <Section>
         <p><b>Hello, my name is</b></p>
         <h2>Adrian Garcia</h2>
