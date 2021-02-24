@@ -1,5 +1,7 @@
 import React, {useState} from "react";
-import styled from 'styled-components'
+import styled from "styled-components";
+
+// IMAGES
 import logo from "../assets/icons/main.svg"
 import burger from "../assets/icons/burguer.svg"
 import ex from "../assets/icons/close.svg"

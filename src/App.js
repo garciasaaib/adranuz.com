@@ -4,7 +4,6 @@ import { GlobalStyle } from './GlobalStyle'
 import Wrapper from './templates/Wrapper'
 import Header from './templates/Header'
 import Content from './templates/Content'
-import Footer from './templates/Footer'
 
 
 
@@ -15,7 +14,6 @@ function App() {
       <Wrapper>
         <Header />
         <Content />
-        {/* <Footer /> */}
       </Wrapper>
     </>
   )

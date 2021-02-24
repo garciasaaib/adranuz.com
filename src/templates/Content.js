@@ -27,7 +27,6 @@ function Content() {
       </Section>
       <Section title="Projects">
         <p>My main area of experience is beeing a Front-End developer using languages, frameworks and other tools as:</p>
-        
       </Section>
       <Section title="Experience"></Section>
         <p>My main area of experience is beeing a Front-End developer using languages, frameworks and other tools as:</p>

@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   --color-text1: #9AA3A3;
   --color-text2: #D8E9E9;
   --colorblur: rgba(37,46,72,0.69);
-  --color-bg-white: F2F2F2;
+  --color-bg-white: #F2F2F2;
   --color-primary: #36B2BC;
   --color-hover: rgba(54, 178, 188, 0.34);
 
