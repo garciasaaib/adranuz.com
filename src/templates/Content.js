@@ -10,22 +10,14 @@ import NotesContainer from "../components/media/NotesContainer"
 
 const ContentStyled = styled.div`
   margin: auto;
-<<<<<<< HEAD
-  /* filter: blur(4px); */
-=======
   filter: ${({menuOpen}) => menuOpen ? 'blur(4px);' : 'none;'};
->>>>>>> d0f8279427684ce9562122d51bbcf5470635b2c4
   b {
     margin-bottom: 0;
   }
 
 `
 
-<<<<<<< HEAD
-function Content() {
-=======
 function Content({menuOpen}) {
->>>>>>> d0f8279427684ce9562122d51bbcf5470635b2c4
   
   return (
     <ContentStyled menuOpen={menuOpen}>

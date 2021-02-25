@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import React, {useState} from "react";
-=======
 import React from "react";
->>>>>>> d0f8279427684ce9562122d51bbcf5470635b2c4
 import styled from "styled-components";
 
 // IMAGES
@@ -12,11 +8,7 @@ import ex from "../assets/icons/close.svg"
 import arrow from "../assets/icons/arrow.svg"
 
 const HeaderStyled = styled.div`
-<<<<<<< HEAD
-  margin: auto;
-=======
   margin: 3.2rem;
->>>>>>> d0f8279427684ce9562122d51bbcf5470635b2c4
   display: flex;
   justify-content: space-between;
   margin-bottom:4.6rem;
