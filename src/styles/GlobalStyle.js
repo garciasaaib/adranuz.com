@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 /* Creamos un entorno global de estilos, muy parecido a bootstrap */
 export const GlobalStyle = createGlobalStyle`
 
@@ -37,8 +37,9 @@ export const GlobalStyle = createGlobalStyle`
 html {
   font-size: 62.5%; /* 1rem = 10px */
   background-color: var(--color-bg);
-  font-family: var(--font3);
+  font-family: var(--font1);
   color: var(--color-text2);
+  min-width: 350px;
 }
 h1 {
   font-size: 3.6rem;
