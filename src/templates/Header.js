@@ -63,7 +63,7 @@ function Header({menuOpen, setMenuOpen}) {
       <div className="Nav">
         <img src={menuOpen ? ex : burger} onClick={toggleMenu}/>
         {menuOpen && 
-          <div className="NavList">
+          <div className="NavList" onClick={toggleMenu}>
             <ul>
               <li><a href="#">Home <img className="arrow" src={arrow} /></a></li>
               <li><a href="#">About <img className="arrow" src={arrow} /></a></li>
