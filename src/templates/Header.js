@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import styled from "styled-components";
 
 // IMAGES
@@ -8,7 +8,7 @@ import ex from "../assets/icons/close.svg"
 import arrow from "../assets/icons/arrow.svg"
 
 const HeaderStyled = styled.div`
-  margin: auto;
+  margin: 3.2rem;
   display: flex;
   justify-content: space-between;
   margin-bottom:4.6rem;
@@ -27,7 +27,7 @@ const HeaderStyled = styled.div`
     right: 0;
     padding: 4rem;
     text-align: right;
-
+    z-index: 1;
 
     & ul {
       list-style:none;
@@ -50,11 +50,10 @@ const HeaderStyled = styled.div`
   }
 `
 
-function Header() {
-  const [menu, setMenu] = useState(false);
+function Header({menuOpen, setMenuOpen}) {
 
   const toggleMenu = () => {
-    setMenu(!menu)
+    setMenuOpen(!menuOpen)
   } 
   return (
     <HeaderStyled>
@@ -62,8 +61,8 @@ function Header() {
         <img src={logo} />
       </div>
       <div className="Nav">
-        <img src={menu ? ex : burger} onClick={toggleMenu}/>
-        {menu && 
+        <img src={menuOpen ? ex : burger} onClick={toggleMenu}/>
+        {menuOpen && 
           <div className="NavList">
             <ul>
               <li><a href="#">Home <img className="arrow" src={arrow} /></a></li>

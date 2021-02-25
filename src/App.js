@@ -1,21 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
-import { GlobalStyle } from './GlobalStyle'
+import { GlobalStyle } from './styles/GlobalStyle'
 import Wrapper from './templates/Wrapper'
-import Header from './templates/Header'
-import Content from './templates/Content'
+
 
 
 
 function App() {
   return (
-    <>
+    <React.StrictMode>
       <GlobalStyle />
-      <Wrapper>
-        <Header />
-        <Content />
-      </Wrapper>
-    </>
+      <Wrapper/>
+    </React.StrictMode>
   )
 }
 export default App
