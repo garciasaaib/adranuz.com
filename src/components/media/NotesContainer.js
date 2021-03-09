@@ -1,10 +1,6 @@
 import React, { useEffect } from "react"
 import styled from "styled-components"
-<<<<<<< HEAD
-import Note from "./Note"
-=======
 import Note from "@components/media/Note"
->>>>>>> 8d6c81cc62eef579f0aabe8f7c388c7de34a4e30
 import { useState } from "react"
 import { name } from "file-loader"
 

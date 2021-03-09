@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-import React, {useState} from "react";
-=======
 import React from "react";
->>>>>>> d0f8279427684ce9562122d51bbcf5470635b2c4
-=======
-import React from "react";
->>>>>>> 8d6c81cc62eef579f0aabe8f7c388c7de34a4e30
 import styled from "styled-components";
 
 // IMAGES
@@ -16,15 +8,8 @@ import ex from "@assets/icons/close.svg"
 import arrow from "@assets/icons/arrow.svg"
 
 const HeaderStyled = styled.div`
-<<<<<<< HEAD
-<<<<<<< HEAD
-  margin: auto;
-=======
+
   margin: 3.2rem;
->>>>>>> d0f8279427684ce9562122d51bbcf5470635b2c4
-=======
-  margin: 3.2rem;
->>>>>>> 8d6c81cc62eef579f0aabe8f7c388c7de34a4e30
   display: flex;
   justify-content: space-between;
   margin-bottom:4.6rem;
@@ -79,11 +64,8 @@ function Header({menuOpen, setMenuOpen}) {
       <div className="Nav">
         <img src={menuOpen ? ex : burger} onClick={toggleMenu}/>
         {menuOpen && 
-<<<<<<< HEAD
-          <div className="NavList">
-=======
+
           <div className="NavList" onClick={toggleMenu}>
->>>>>>> 8d6c81cc62eef579f0aabe8f7c388c7de34a4e30
             <ul>
               <li><a href="#">Home <img className="arrow" src={arrow} /></a></li>
               <li><a href="#">About <img className="arrow" src={arrow} /></a></li>

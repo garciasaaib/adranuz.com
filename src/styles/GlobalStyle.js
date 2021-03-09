@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
 /*------ Styles------*/
 :root {
   --color-bg: #252E48;
+  /*--color-bg: -webkit-linear-gradient(180deg, rgba(0,25,26,1) 40%, rgba(17,82,66,1) 81%, rgba(48,190,140,1) 100%);*/
   --color-text1: #9AA3A3;
   --color-text2: #D8E9E9;
   --color-text3: #252E48;
