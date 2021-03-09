@@ -2,7 +2,15 @@ import React from "react"
 import styled from "styled-components"
 
 
+<<<<<<< HEAD
 import Section from "../components/sections/Section"
+=======
+import Section from "@components/sections/Section"
+
+import ProfilePhoto from "@components/media/Profile"
+import SocialMediaContainer from "@components/media/SocialContainer"
+import NotesContainer from "@components/media/NotesContainer"
+>>>>>>> 8d6c81cc62eef579f0aabe8f7c388c7de34a4e30
 
 import ProfilePhoto from "../components/media/Profile"
 import SocialMediaContainer from "../components/media/SocialContainer"
@@ -11,10 +19,14 @@ import NotesContainer from "../components/media/NotesContainer"
 const ContentStyled = styled.div`
   margin: auto;
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* filter: blur(4px); */
 =======
   filter: ${({menuOpen}) => menuOpen ? 'blur(4px);' : 'none;'};
 >>>>>>> d0f8279427684ce9562122d51bbcf5470635b2c4
+=======
+  filter: ${({menuOpen}) => menuOpen ? 'blur(4px);' : 'none;'};
+>>>>>>> 8d6c81cc62eef579f0aabe8f7c388c7de34a4e30
   b {
     margin-bottom: 0;
   }
@@ -22,10 +34,14 @@ const ContentStyled = styled.div`
 `
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function Content() {
 =======
 function Content({menuOpen}) {
 >>>>>>> d0f8279427684ce9562122d51bbcf5470635b2c4
+=======
+function Content({menuOpen}) {
+>>>>>>> 8d6c81cc62eef579f0aabe8f7c388c7de34a4e30
   
   return (
     <ContentStyled menuOpen={menuOpen}>
