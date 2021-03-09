@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import styled from "styled-components"
-import Note from "./Note"
+import Note from "@components/media/Note"
 import { useState } from "react"
 import { name } from "file-loader"
 

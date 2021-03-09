@@ -2,11 +2,11 @@ import React from "react"
 import styled from "styled-components"
 
 
-import Section from "../components/sections/Section"
+import Section from "@components/sections/Section"
 
-import ProfilePhoto from "../components/media/Profile"
-import SocialMediaContainer from "../components/media/SocialContainer"
-import NotesContainer from "../components/media/NotesContainer"
+import ProfilePhoto from "@components/media/Profile"
+import SocialMediaContainer from "@components/media/SocialContainer"
+import NotesContainer from "@components/media/NotesContainer"
 
 const ContentStyled = styled.div`
   margin: auto;

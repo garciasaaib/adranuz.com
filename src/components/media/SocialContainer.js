@@ -2,11 +2,11 @@ import React from "react"
 import styled from "styled-components"
 import SocialMedia from "./Social"
 
-import twitterIcon from "../../assets/svg/twitter.svg"
-import linkedinIcon from "../../assets/svg/linkedin.svg"
-import whatsappIcon from "../../assets/svg/whatsapp.svg"
-import skypeIcon from "../../assets/svg/skype.svg"
-import githubIcon from "../../assets/svg/github.svg"
+import twitterIcon from "@assets/svg/twitter.svg"
+import linkedinIcon from "@assets/svg/linkedin.svg"
+import whatsappIcon from "@assets/svg/whatsapp.svg"
+import skypeIcon from "@assets/svg/skype.svg"
+import githubIcon from "@assets/svg/github.svg"
 
 
 const SocialContainerStyled = styled.div`
