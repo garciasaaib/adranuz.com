@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import img from "../../assets/img/profile.png"
+import img from "@assets/img/profile.png"
 
 
 const ProfileStyled = styled.div`

@@ -12,6 +12,15 @@ module.exports = {
   output: {
     filename: 'app.bundle.js'
   },
+  resolve: {
+    alias: {
+      '@templates': path.resolve(__dirname, 'src/templates/'),
+      '@pages': path.resolve(__dirname, 'src/pages/'),
+      '@styles': path.resolve(__dirname, 'src/styles/'),
+      '@assets': path.resolve(__dirname, 'src/assets/'),
+      '@components': path.resolve(__dirname, 'src/components/'),
+    }
+  },
   module: {
     rules: [
       {
