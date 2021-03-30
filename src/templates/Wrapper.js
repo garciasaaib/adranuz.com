@@ -1,21 +1,29 @@
-import Content from './Content'
+import React from 'react';
+import styled from "styled-components"
+
+import Footer from "@templates/Footer";
+import Nav from "@templates/Nav"
 
 const WrapperStyled = styled.div`
   margin: auto;
-  /* border: 1px solid teal; */
-  /* margin: 3.2rem; */
   overflow-x: hidden;
+  background-color: var(--color-bg-1);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  `
 
-  
-`
-
-function Wrapper() {
-  const [menuOpen, setMenuOpen] = useState(false)
+const Wrapper = () => {
   return (
     <WrapperStyled>
-      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Content menuOpen={menuOpen} />
-      {/* <Footer /> */}
+      <main>
+        <Nav></Nav>
+      </main>
+      <Footer />
     </WrapperStyled>
   )
 }

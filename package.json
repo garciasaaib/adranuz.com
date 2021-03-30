@@ -4,7 +4,7 @@
   "description": "My personal blog",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --open",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -42,6 +42,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-is": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "styled-components": "^5.2.1"
   },
   "resolutions": {

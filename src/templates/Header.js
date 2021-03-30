@@ -1,22 +1,16 @@
-<<<<<<< HEAD
-import React, {useState} from "react";
-=======
 import React from "react";
->>>>>>> d0f8279427684ce9562122d51bbcf5470635b2c4
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 // IMAGES
-import logo from "../assets/icons/main.svg"
-import burger from "../assets/icons/burguer.svg"
-import ex from "../assets/icons/close.svg"
-import arrow from "../assets/icons/arrow.svg"
+import logo from "@assets/icons/main.svg"
+import burger from "@assets/icons/burguer.svg"
+import ex from "@assets/icons/close.svg"
+import arrow from "@assets/icons/arrow.svg"
 
 const HeaderStyled = styled.div`
-<<<<<<< HEAD
-  margin: auto;
-=======
+
   margin: 3.2rem;
->>>>>>> d0f8279427684ce9562122d51bbcf5470635b2c4
   display: flex;
   justify-content: space-between;
   margin-bottom:4.6rem;
@@ -65,19 +59,20 @@ function Header({menuOpen, setMenuOpen}) {
   } 
   return (
     <HeaderStyled>
-      <div className="Logo">
+      <Link to="/" className="Logo">
         <img src={logo} />
-      </div>
+      </Link>
       <div className="Nav">
         <img src={menuOpen ? ex : burger} onClick={toggleMenu}/>
         {menuOpen && 
-          <div className="NavList">
+
+          <div className="NavList" onClick={toggleMenu}>
             <ul>
-              <li><a href="#">Home <img className="arrow" src={arrow} /></a></li>
-              <li><a href="#">About <img className="arrow" src={arrow} /></a></li>
-              <li><a href="#">Projects <img className="arrow" src={arrow} /></a></li>
-              <li><a href="#">Experience <img className="arrow" src={arrow} /></a></li>
-              <li><a href="#">Get in Touch <img className="arrow" src={arrow} /></a></li>
+              <li><Link to="/me">Me <img className="arrow" src={arrow} /></Link></li>
+              <li><Link to="/docs">Docs <img className="arrow" src={arrow} /></Link></li>
+              <li><Link to="/projects">Projects <img className="arrow" src={arrow} /></Link></li>
+              <li><Link to="/contact">Get in Touch <img className="arrow" src={arrow} /></Link></li>
+              {/* <li><Link to="/">Home <img className="arrow" src={arrow} /></Link></li> */}
             </ul>
             <button>Resume</button>
           </div>

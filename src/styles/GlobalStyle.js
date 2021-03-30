@@ -5,13 +5,16 @@ export const GlobalStyle = createGlobalStyle`
 /*------ Styles------*/
 :root {
   --color-bg: #252E48;
+  /*--color-bg: -webkit-linear-gradient(180deg, rgba(0,25,26,1) 40%, rgba(17,82,66,1) 81%, rgba(48,190,140,1) 100%);*/
   --color-text1: #9AA3A3;
   --color-text2: #D8E9E9;
   --color-text3: #252E48;
   --color-text4: #6B6B6B;
   --colorblur: rgba(37,46,72,0.69);
   --color-bg-white: #F2F2F2;
-  --color-primary: #36B2BC;
+  --color-bg-1: #00191A;
+  --color-bg-2: #30BE8C;
+  --color-primary: #30BE8C;
   --color-hover: rgba(54, 178, 188, 0.34);
 
   --color-note1: #F5F3C0;
@@ -98,12 +101,12 @@ button:hover {
   background: var(--color-hover);
 }
 button:active {
-  /* background: var(--color-hover); */
   color: var(---color-text2)
 }
 img {
   width: 100%;
 }
+
 
 .flex-center{
   display: flex;

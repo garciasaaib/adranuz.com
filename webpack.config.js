@@ -12,6 +12,16 @@ module.exports = {
   output: {
     filename: 'app.bundle.js'
   },
+  resolve: {
+    alias: {
+      '@templates': path.resolve(__dirname, 'src/templates/'),
+      '@pages': path.resolve(__dirname, 'src/pages/'),
+      '@routes': path.resolve(__dirname, 'src/routes/'),
+      '@styles': path.resolve(__dirname, 'src/styles/'),
+      '@assets': path.resolve(__dirname, 'src/assets/'),
+      '@components': path.resolve(__dirname, 'src/components/'),
+    }
+  },
   module: {
     rules: [
       {
@@ -40,8 +50,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'public/index.html'
+      template: "public/index.html",
+      favicon: "./src/assets/icons/main.svg"
     }),
     new webpack.HotModuleReplacementPlugin({})
   ],
+  devServer: {
+    historyApiFallback: true,
+  },
 }
