@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 // IMAGES
 import logo from "@assets/icons/main.svg"
@@ -58,20 +59,20 @@ function Header({menuOpen, setMenuOpen}) {
   } 
   return (
     <HeaderStyled>
-      <div className="Logo">
+      <Link to="/" className="Logo">
         <img src={logo} />
-      </div>
+      </Link>
       <div className="Nav">
         <img src={menuOpen ? ex : burger} onClick={toggleMenu}/>
         {menuOpen && 
 
           <div className="NavList" onClick={toggleMenu}>
             <ul>
-              <li><a href="#">Home <img className="arrow" src={arrow} /></a></li>
-              <li><a href="#">About <img className="arrow" src={arrow} /></a></li>
-              <li><a href="#">Projects <img className="arrow" src={arrow} /></a></li>
-              <li><a href="#">Experience <img className="arrow" src={arrow} /></a></li>
-              <li><a href="#">Get in Touch <img className="arrow" src={arrow} /></a></li>
+              <li><Link to="/me">Me <img className="arrow" src={arrow} /></Link></li>
+              <li><Link to="/docs">Docs <img className="arrow" src={arrow} /></Link></li>
+              <li><Link to="/projects">Projects <img className="arrow" src={arrow} /></Link></li>
+              <li><Link to="/contact">Get in Touch <img className="arrow" src={arrow} /></Link></li>
+              {/* <li><Link to="/">Home <img className="arrow" src={arrow} /></Link></li> */}
             </ul>
             <button>Resume</button>
           </div>

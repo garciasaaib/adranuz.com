@@ -3,7 +3,7 @@ import styled from "styled-components"
 import img from "@assets/img/profile.png"
 
 
-const ProfileStyled = styled.div`
+const ProfilePhotoStyled = styled.div`
   margin: auto;
   text-align: center;
   figure {
@@ -18,17 +18,17 @@ const ProfileStyled = styled.div`
 
 `
 
-function Profile() {
+function ProfilePhoto() {
   return (
-    <ProfileStyled>
+    <ProfilePhotoStyled>
       <figure>
         <picture>
           <img src={img} />
         </picture>
         
       </figure>
-    </ProfileStyled>
+    </ProfilePhotoStyled>
   )
 }
 
-export default Profile
+export default ProfilePhoto

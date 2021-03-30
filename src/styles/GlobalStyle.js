@@ -12,7 +12,9 @@ export const GlobalStyle = createGlobalStyle`
   --color-text4: #6B6B6B;
   --colorblur: rgba(37,46,72,0.69);
   --color-bg-white: #F2F2F2;
-  --color-primary: #36B2BC;
+  --color-bg-1: #00191A;
+  --color-bg-2: #30BE8C;
+  --color-primary: #30BE8C;
   --color-hover: rgba(54, 178, 188, 0.34);
 
   --color-note1: #F5F3C0;
@@ -99,12 +101,12 @@ button:hover {
   background: var(--color-hover);
 }
 button:active {
-  /* background: var(--color-hover); */
   color: var(---color-text2)
 }
 img {
   width: 100%;
 }
+
 
 .flex-center{
   display: flex;
