@@ -42,7 +42,6 @@ html {
   background-color: var(--color-bg);
   font-family: var(--font1);
   color: var(--color-text2);
-  min-width: 350px;
 }
 h1 {
   font-size: 3.6rem;

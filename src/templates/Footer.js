@@ -13,6 +13,7 @@ const FooterStyled = styled.footer`
   align-items: flex-end;
   justify-content: space-between;
   padding: 1rem;
+  z-index: 1;
   & > div {
     display: flex;
     gap: 1rem;
@@ -28,7 +29,7 @@ const Footer = () => (
         <SocialLogic />
       </div>
 
-      <small>Design & built by <a href="https://twitter.com/adreanzoe" target="_blank"><b>@Adreanzoe @Adranuz</b></a></small>
+      <small>Design & built by <br /> <a href="https://twitter.com/adreanzoe" target="_blank"><b>@Adreanzoe @Adranuz</b></a></small>
     </FooterStyled>
   )
 

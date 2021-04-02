@@ -15,7 +15,7 @@ const SocialContainer = ({data, button}) => {
   const [open, setOpen] = useState(false)
   
   return (
-    <SocialContainerStyled onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+    <SocialContainerStyled onClick={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
       <Button {...button} />
       {
         open && data.map((data, id) => <SocialMedia key={id} {...data} />)

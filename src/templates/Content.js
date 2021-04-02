@@ -12,7 +12,6 @@ import NotFound from "@pages/NotFound";
 const ContentStyled = styled.div`
   margin: auto;
 
-  filter: ${({menuOpen}) => menuOpen ? 'blur(4px);' : 'none;'};
   b {
     margin-bottom: 0;
   }
@@ -20,9 +19,9 @@ const ContentStyled = styled.div`
 `
 
 
-function Content({menuOpen}) {
+function Content() {
   return (
-    <ContentStyled menuOpen={menuOpen}>
+    <ContentStyled>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/me" component={Me} />
