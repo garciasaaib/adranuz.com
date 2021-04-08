@@ -66,7 +66,7 @@ const NavStyled = styled.nav`
           rgba(255, 237, 163, 1) 90%
         );
       div {
-        border: 1px solid darkgray;
+        border: 1px solid rgb(146 131 75);
         border-bottom: none;
         border-right: none;
       }
@@ -75,7 +75,7 @@ const NavStyled = styled.nav`
     ul {
       border-bottom: none;
       border-right: none;
-      padding: 1rem;
+      padding: 1rem 0.3rem;
       position: relative;
       z-index: 0;
 
@@ -87,6 +87,7 @@ const NavStyled = styled.nav`
     }
     li:nth-child(even) p {
       color: #1e7d60;
+      text-shadow: 1px 1px 2px rgb(60 170 182);
     }
     p {
       letter-spacing: 0;
@@ -96,7 +97,7 @@ const NavStyled = styled.nav`
       font-size: 2.5rem;
       display: inline;
       font-weight: bold;
-      text-shadow: 1px 1px 2px rgba(0, 25, 26, 1);
+      text-shadow: 1px 1px 2px rgb(114 26 26);
       :hover {
         filter: contrast(150%) drop-shadow(0px 0px 3px #fefbf1);
       }
