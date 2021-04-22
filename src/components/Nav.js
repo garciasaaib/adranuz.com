@@ -1,14 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+
 import Container3d from "@components/Container3d/";
-import githubIcon from "@assets/svg/github.svg";
+import ContainerLumined from "@components/ContainerLumined";
+import ContainerNeon from "@components/ContainerNeon";
+import ContainerMain from "@components/ContainerMain";
+
+import Icon from "@components/Icon";
+import githubIcon from "@assets/svg/github-line.svg";
+import twitterIcon from "@assets/svg/twitter-line.svg";
+import bitcoinIcon from "@assets/svg/bitcoin-line.svg";
+import logoIcon from "@assets/icons/main.svg";
+// import ellipse from "@assets/svg/ellipse.svg";
+
 
 const NavStyled = styled.nav`
-  height: 85%;
+  /* border: 1px solid red; */
+  height: 100%;
   transform-origin: bottom right;
-  width: auto;
-  /* max-width: 70rem; */
+  width: 100%;
+  max-width: 560px;
   margin-bottom: 0;
   margin-top: auto;
   position: absolute;
@@ -25,8 +37,10 @@ const NavStyled = styled.nav`
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin-bottom: 5rem;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10rem;
+    margin-top: 1rem;
     padding: 0 0rem;
   }
   li {
@@ -35,72 +49,12 @@ const NavStyled = styled.nav`
     margin: auto;
     text-align: center;
   }
-
-  .list.table {
-    background: linear-gradient(
-      146deg,
-      rgba(239, 219, 136, 1) 0%,
-      rgba(28, 22, 1, 1) 54%
-    );
-    border: 0.2rem solid rgba(48, 190, 140, 1);
-    position: relative;
-    padding: 0.5rem;
-    padding-bottom: 0;
-    padding-right: 0;
-
-    .cuadricula {
-      position: absolute;
-      top: 0.5rem;
-      left: 0.5rem;
-      bottom: 0;
-      right: 0;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      background: linear-gradient(
-          90deg,
-          rgba(255, 237, 163, 1) 0%,
-          rgba(255, 243, 205, 1) 25%,
-          rgba(255, 237, 163, 1) 50%,
-          rgba(255, 243, 205, 1) 75%,
-          rgba(255, 237, 163, 1) 90%
-        );
-      div {
-        border: 1px solid rgb(146 131 75);
-        border-bottom: none;
-        border-right: none;
-      }
-    }
-
-    ul {
-      border-bottom: none;
-      border-right: none;
-      padding: 1rem 0.3rem;
-      position: relative;
-      z-index: 0;
-
-      ::before {
-        z-index: -2;
-        content: "";
-        position: absolute;
-      }
-    }
-    li:nth-child(even) p {
-      color: #1e7d60;
-      text-shadow: 1px 1px 2px rgb(60 170 182);
-    }
+  p {
+    font-size: 3.7rem;
+  }
+  @media (max-width: 560px) {
     p {
-      letter-spacing: 0;
-      margin: 0;
-      padding: 0;
-      color: #cb592d;
-      font-size: 2.5rem;
-      display: inline;
-      font-weight: bold;
-      text-shadow: 1px 1px 2px rgb(114 26 26);
-      :hover {
-        filter: contrast(150%) drop-shadow(0px 0px 3px #fefbf1);
-      }
+      font-size: 6.7vw;
     }
   }
 `;
@@ -110,44 +64,28 @@ const Nav = ({ setOpenModal }) => {
     <NavStyled>
       <div className="links">
         <Container3d>
-          <ul className="list">
-            <li>
-              <Link to="/me" onClick={() => setOpenModal(true)}>
-                RESUME
-              </Link>
-            </li>
-            <li>
-              <Link to="/docs" onClick={() => setOpenModal(true)}>
-                GET IN TOUCH
-              </Link>
-            </li>
-          </ul>
+          <ContainerMain>
+            <ul className="list">
+              <li className="logoIcon">
+                <Icon className="icon" svgIcon={logoIcon}></Icon>
+              </li>
+              <li>
+                <Link to="/me" onClick={() => setOpenModal(true)}>
+                  <p>RESUME</p>
+                </Link>
+              </li>
+              <hr />
+              <li>
+                <Link to="/docs" onClick={() => setOpenModal(true)}>
+                  <p class="cursive">Get In<br />Touch</p>
+                </Link>
+              </li>
+            </ul>
+          </ContainerMain>
         </Container3d>
 
         <Container3d>
-          <div className="list table">
-            <div className="cuadricula">
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-            </div>
+          <ContainerLumined>
             <ul>
               <li>
                 <Link to="/me" onClick={() => setOpenModal(true)}>
@@ -156,7 +94,7 @@ const Nav = ({ setOpenModal }) => {
               </li>
               <li>
                 <Link to="/projects" onClick={() => setOpenModal(true)}>
-                  <p>ARTICLES BY ADRANUZ</p>
+                  <p>ARTICLES BY ME</p>
                 </Link>
               </li>
               <li>
@@ -170,37 +108,29 @@ const Nav = ({ setOpenModal }) => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </ContainerLumined>
         </Container3d>
 
         <Container3d>
-          <ul className="list">
-            <li>
-              <Link to="/me" onClick={() => setOpenModal(true)}>
-                {githubIcon}
-              </Link>
-            </li>
-            <li>
-              <Link to="/me" onClick={() => setOpenModal(true)}>
-                Me
-              </Link>
-            </li>
-            <li>
-              <Link to="/me" onClick={() => setOpenModal(true)}>
-                Me
-              </Link>
-            </li>
-            <li>
-              <Link to="/me" onClick={() => setOpenModal(true)}>
-                Me
-              </Link>
-            </li>
-            <li>
-              <Link to="/me" onClick={() => setOpenModal(true)}>
-                Me
-              </Link>
-            </li>
-          </ul>
+          <ContainerNeon>
+            <ul>
+              <li>
+                <Link to="/me" onClick={() => setOpenModal(false)}>
+                  <Icon className="icon" svgIcon={githubIcon}></Icon>
+                </Link>
+              </li>
+              <li>
+                <Link to="/me" onClick={() => setOpenModal(false)}>
+                  <Icon className="icon" svgIcon={twitterIcon}></Icon>
+                </Link>
+              </li>
+              <li>
+                <Link to="/me" onClick={() => setOpenModal(false)}>
+                  <Icon className="icon" svgIcon={bitcoinIcon}></Icon>
+                </Link>
+              </li>
+            </ul>
+          </ContainerNeon>
         </Container3d>
       </div>
     </NavStyled>

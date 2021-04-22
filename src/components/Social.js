@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
+import Icon from "@components/Icon"
 
 
 const SocialStyled = styled.div`
-  width: 100%;
 
   /* margin: auto; */
   text-align: center;
-  figure {
+  a {
     width: 4rem;
     height: 5.1rem;
     cursor:pointer;
@@ -26,11 +26,7 @@ const Social = ({name, image, url}) => {
   return (
     <SocialStyled>
       <a href={url} target="_blank" >
-        <figure>
-          <picture>
-            <img src={image} alt={`${name} icon`}/>
-          </picture>
-        </figure>
+        <Icon svgIcon={image}></Icon>
       </a>
     </SocialStyled>
   )

@@ -2,6 +2,13 @@ import { createGlobalStyle } from 'styled-components';
 /* Creamos un entorno global de estilos, muy parecido a bootstrap */
 export const GlobalStyle = createGlobalStyle`
 
+/*------ Fonts ------*/
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+
+
 /*------ Styles------*/
 :root {
   --color-bg: #252E48;
@@ -71,7 +78,7 @@ h5 {
 p {
   font-size: 1.8rem;
   font-family: var(--font1);
-  line-height : 2.3rem;
+  line-height : 100%;
   margin-bottom: 2.2rem;
   text-overflow: ellipsis; 
   color: var(--color-text1);

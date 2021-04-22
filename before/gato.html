@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>GardenScript Blog</title>
+  <style>
+        :root {
+      --dark: #4D4C54;
+      --dark2: #47474F;
+      --pink: #F3AAC5;
+      --bg: #FFEBBE;
+      --eyes: #F9DA75;
+      --grey: #5B5964;
+      --shadow: #ccbb94;
+
+      --nose-size: 50%;
+      --align-left: 19%;
+    }
+    body {
+      background: var(--bg);
+      min-height: 90vh;
+      display:grid;
+      padding: auto;
+      margin: 0;
+      grid-template-columns: auto;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+/*       margin-top: 20%; */
+      width: 600px;
+      height: 600px;
+/*       margin: auto; */
+      position: relative;
+/*       border: 1px solid white; */
+    }
+    .head {
+      width: 50%;
+      height: 30%;
+      background: var(--dark);
+      border-radius: 45px;
+      /* margin: 19%; */
+      top: 19%;
+      left: var(--align-left);
+      position: relative;
+      display: grid;
+      align-items:center;
+    }
+    .head:before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%);
+      width: 0;
+      height: 0;
+      border-top: 30px solid var(--grey);
+      border-left: 90px solid transparent;
+      border-right: 90px solid transparent;
+    }
+    .head:after {
+      content: "";
+      position: absolute;
+      background-color: var(--grey);
+      width: 50px;
+      height: 100px;
+      right: 14%;
+      top: 100%;
+      z-index: -4;
+      transform-origin: top right;
+      transform: rotate(-45deg);
+    }
+    .ear {
+      width: 0;
+      height: 0;
+      border-bottom: 10rem solid var(--dark);
+      border-right: 10rem solid transparent;
+      position: absolute;
+      top: -60%;
+      z-index: -1;
+    }
+    .ear:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-bottom: 10rem solid var(--pink);
+      border-right: 3rem solid transparent;
+      position: absolute;
+    }
+    .ear:nth-of-type(1) {
+      right: 0;
+      transform: rotateY(180deg);
+    }
+    .face {
+      padding: auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+    .eye {
+      width: 60px;
+      height: 60px;
+      border: 10px solid var(--eyes);
+      border-radius: 50%;
+    }
+    .nose-area {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      transform: rotate(-135deg);
+      overflow: hidden;
+      top: 40%;
+    }
+    .nose {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border-top-left-radius: var(--nose-size);
+/*       background: var(--pink); */
+      background: red;
+      z-index: 1;
+    }
+    .nose:after,
+    .nose:before {
+      content: '';
+      width: 0px;
+      height: 0px;
+      transform: 
+        rotateZ(135deg)
+        skewX(-45deg)
+        scale(1.45)
+        translate(0px, -2px)
+        ;
+      background: var(--pink);
+      border-top: 12px solid transparent;
+      border-left: 20px solid transparent; 
+      border-top-right-radius: var(--nose-size);
+      position: absolute;
+    }
+    .nose:before {
+      transform: 
+        rotateZ(135deg)
+        rotateY(180deg)
+        skewX(-45deg)
+        scale(1.45)
+        translate(-4px, -2px)
+        ;
+    }
+
+    /* BODY */
+    .body {
+      background: var(--dark);
+      position: relative;
+      width: 36%;
+      height: 40%;
+      top: 19%;
+      left: 26%;
+      z-index: -3;
+    }
+    .body:after,
+    .body:before {
+      content: '';
+      background: var(--dark);
+      width: 35%;
+      height: 20%;
+      position: absolute;
+      border-radius: 50%;
+      top: 100%;
+      transform: translate(0, -50%);
+    }
+    .body:before {
+      right: 0;
+    }
+    .chest {
+      background: var(--dark2);
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      width: 30%;
+      height: 50%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    
+
+    /* BACK --------------------------------------------------- */
+    .back {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: var(--dark);
+      transform-origin: top right;
+      position: absolute;
+      z-index: -4;
+      bottom: 11%;
+      left: 55%;
+    }
+    .back:after,
+    .back:before {
+      content: '';
+      background: var(--grey);
+      width: 25%;
+      height: 25%;
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+      border-radius: 0 100% 0 0;
+    }
+    .back:before {
+      border-radius: 0 0 0 0;
+      left: 0;
+      z-index: 1;
+    }
+    .tail {
+      height: 150%;
+      width: 150%;
+      border-radius: 50%;
+      border: 20px solid var(--dark);
+      position: absolute;
+      bottom: 0;
+      left: -40%;
+    }
+    .tail:before, .tail:after {
+      content: '';
+      background: var(--bg);
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      bottom: 70%;
+      right: 10%;
+      transform: rotate(45deg);
+      /* right: 0; */
+    }
+    .tail:after {
+      background: var(--dark);
+      width: 20px;
+      height: 20px;
+      transform: initial;
+      border-radius: 50%;
+      bottom: 245.7px;
+      right: 19.8px;
+    }
+    .shadow {
+      content: '';
+      background: var(--shadow);
+      width: 80%;
+      height: 60px;
+      position: absolute;
+      z-index: -6;
+      bottom: 5%;
+      border-radius: 50%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="head">
+      <div class="ear"></div>
+      <div class="ear"></div>
+      <div class="face">
+        <div class="eye"></div>
+        <div class="nose-area">
+          <div class="nose"></div>
+        </div>
+        <div class="eye"></div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="chest"></div>
+    </div>
+    <div class="back">
+      <div class="tail"></div>
+    </div>
+    <div class="shadow"></div>
+  </div>
+</body>
+
+</html>

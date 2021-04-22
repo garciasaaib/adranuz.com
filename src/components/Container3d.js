@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+
 const Container3dStyled = styled.div`
   height: auto;
+  width: fit-content;
   padding: 0.3rem;
+  margin-bottom: 1.5rem;
   background: rgba(0, 25, 26, 1);
   transform-origin: center;
   transform: translate(-1rem) rotateX(15deg) rotateY(-30deg);
   box-sizing: border-content;
-
   ::before {
     content: "";
     height: 10rem;
@@ -48,14 +50,39 @@ const Container3dStyled = styled.div`
     height: 200px;
   }
 
+  :first-child {
+  margin-bottom: 0.5rem;
 
+    padding: 0;
+    background: none;
+    ::after,
+    ::before {
+      background: none;
+    }
+    ::before {
+      background: rgb(0, 25, 26);
+      width: 1.5rem;
+      width: 1.5rem;
+      height: 66%;
+      top: 97.5%;
+      left: 39.5%;
+      right: 100%;
+      border-top-left-radius: 30%;
+      border-bottom-right-radius: 50%;
+      /* transform: translateY(50%) */
+      /* top: calc(100%); */
+    }
+    palo {
+      top: calc(100% + 8px);
+      height: 1rem;
+    }
+  }
 `;
 
 const Container3d = ({ children }) => {
   return (
     <Container3dStyled>
-        {children}
-      <div className="extra-draw"></div>
+      {children}
       <div className="palo"></div>
     </Container3dStyled>
   );

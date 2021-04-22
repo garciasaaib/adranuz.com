@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Icon from "@components/Icon";
 
 const ButtonStyled = styled.button`
   padding: 0;
@@ -8,6 +9,8 @@ const ButtonStyled = styled.button`
   border:none;
   padding: 0.5rem;
   border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
   b {
     margin: auto;
   }
@@ -19,7 +22,7 @@ const ButtonStyled = styled.button`
 const Button = ({image, name}) => {
   return (
     <ButtonStyled>
-      <img src={image} alt={name} />
+      <Icon svgIcon={image}></Icon>
     </ButtonStyled>
   );
 };
