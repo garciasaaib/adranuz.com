@@ -48,23 +48,12 @@ const NavStyled = styled.nav`
     text-align: center;
   }
   p {
-<<<<<<< HEAD
     font-size: 4.8rem;
     font-family: "Junegull", consolas;
     font-weight: bold;
     @media (max-width: 560px) {
-      font-size: 8vw;
+      font-size: 8.2vw;
     }
-=======
-    font-size: 5rem;
-    font-family: "Junegull", consolas;
-    font-weight: bold;
-    @media (max-width: 560px) {
-    
-      font-size: 8.5vw;
-    
-  }
->>>>>>> 74602312ced7ec449a4d31a154e06e78cc09f9ad
   }
 `;
 
