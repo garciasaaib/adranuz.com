@@ -12,11 +12,9 @@ import githubIcon from "@assets/svg/github-line.svg";
 import twitterIcon from "@assets/svg/twitter-line.svg";
 import bitcoinIcon from "@assets/svg/bitcoin-line.svg";
 import logoIcon from "@assets/icons/main.svg";
-// import ellipse from "@assets/svg/ellipse.svg";
 
 
 const NavStyled = styled.nav`
-  /* border: 1px solid red; */
   height: 100%;
   transform-origin: bottom right;
   width: 100%;
@@ -50,11 +48,11 @@ const NavStyled = styled.nav`
     text-align: center;
   }
   p {
-    font-size: 3.7rem;
-  }
-  @media (max-width: 560px) {
-    p {
-      font-size: 6.7vw;
+    font-size: 4.8rem;
+    font-family: "Junegull", consolas;
+    font-weight: bold;
+    @media (max-width: 560px) {
+      font-size: 8vw;
     }
   }
 `;

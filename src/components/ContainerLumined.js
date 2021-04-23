@@ -39,7 +39,7 @@ const ContainerLuminedStyled = styled.div`
     ul {
       border-bottom: none;
       border-right: none;
-      padding: 1rem 0.3rem;
+      padding: .4rem 1rem;
       position: relative;
       z-index: 0;
 
