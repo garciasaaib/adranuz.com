@@ -1,15 +1,21 @@
 import { createGlobalStyle } from 'styled-components';
+// import junegull from "@assets/fonts/junegull.ttf"
+import junegull from "@assets/fonts/junegull.ttf";
+
 /* Creamos un entorno global de estilos, muy parecido a bootstrap */
 export const GlobalStyle = createGlobalStyle`
 
 /*------ Fonts ------*/
 @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@font-face {
+  font-family:'Junegull';
+  src: url(${junegull});
+  font-style: normal;
+  font-weight: 300;
+}
 
-
-
-
-/*------ Styles------*/
+/*------ Vars ------*/
 :root {
   --color-bg: #252E48;
   /*--color-bg: -webkit-linear-gradient(180deg, rgba(0,25,26,1) 40%, rgba(17,82,66,1) 81%, rgba(48,190,140,1) 100%);*/

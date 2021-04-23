@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Container3dStyled = styled.div`
   height: auto;
   width: fit-content;
-  padding: 0.3rem;
+  padding: 1px;
   margin-bottom: 1.5rem;
   background: rgba(0, 25, 26, 1);
   transform-origin: center;
@@ -12,7 +12,7 @@ const Container3dStyled = styled.div`
   box-sizing: border-content;
   ::before {
     content: "";
-    height: 10rem;
+    height: 17rem;
     width: 100%;
     background-color: rgba(0, 25, 26, 1);
     position: absolute;
@@ -20,10 +20,13 @@ const Container3dStyled = styled.div`
     right: 0;
     transform-origin: top;
     transform: skew(60deg) rotate3d(1, 0, 0, 80deg);
+    @media (max-width: 560px) {
+      height: 30vw;
+    }
   }
   ::after {
     content: "";
-    width: 43rem;
+    width: 73rem;
     height: 100%;
     background-color: rgba(0, 25, 26, 1);
     position: absolute;
@@ -31,11 +34,14 @@ const Container3dStyled = styled.div`
     left: 100%;
     top: 0;
     transform: skewY(30deg) rotate3d(0, 1, 0, -86deg);
+    @media (max-width: 560px) {
+      width: 130vw;
+    }
   }
   .palo {
-    width: 1.5rem;
+    width: 2.5rem;
     height: 90%;
-    transform: translateX(5px);
+    transform: translateX(50%);
     background: linear-gradient(
       90deg,
       rgba(0, 25, 26, 0.7) 0%,
@@ -46,8 +52,11 @@ const Container3dStyled = styled.div`
     position: absolute;
     left: 50%;
     transform: translateX(30%);
-    top: calc(100% + 8px);
+    top: calc(100% + 10px);
     height: 200px;
+    @media (max-width: 560px) {
+      width: 5vw;
+    }
   }
 
   :first-child {
@@ -61,19 +70,20 @@ const Container3dStyled = styled.div`
     }
     ::before {
       background: rgb(0, 25, 26);
-      width: 1.5rem;
-      width: 1.5rem;
+      width: 4rem;
       height: 66%;
       top: 97.5%;
       left: 39.5%;
       right: 100%;
       border-top-left-radius: 30%;
       border-bottom-right-radius: 50%;
-      /* transform: translateY(50%) */
-      /* top: calc(100%); */
+      @media (max-width: 560px) {
+        width: 12vw;
+        height: 45vw;
+      }
     }
     palo {
-      top: calc(100% + 8px);
+      top: calc(100% + 5px);
       height: 1rem;
     }
   }
