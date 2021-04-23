@@ -1,4 +1,5 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin")
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
 const path = require('path')
 const webpack = require('webpack')
 
@@ -36,7 +37,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|jp(e*)g|svg|gif)$/,
+        test: /\.(png|jp(e*)g|gif)$/,
         use: [
           {
             loader: 'file-loader',
@@ -46,6 +47,14 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.svg$/,
+        loader: 'svg-sprite-loader',
+        options: {
+            extract: true,
+            spriteFilename: './svgSprite/icons.svg'
+        }
+      }
     ]
   },
   plugins: [
@@ -53,7 +62,8 @@ module.exports = {
       template: "public/index.html",
       favicon: "./src/assets/icons/main.svg"
     }),
-    new webpack.HotModuleReplacementPlugin({})
+    new webpack.HotModuleReplacementPlugin({}),
+    new SpriteLoaderPlugin(),
   ],
   devServer: {
     historyApiFallback: true,
