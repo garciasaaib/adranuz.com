@@ -20,10 +20,11 @@ const ContainerMainStyled = styled.div`
     bottom: 2px;
     top: 2px;
     height: inherit;
-    filter: drop-shadow(31px 17px 0px rgb(0, 25, 26));
-    /* left: 0; */
-    /* right: 0; */
-    /* width: 100%; */
+    filter: drop-shadow(50px 23px rgb(0, 25, 26));
+    @media (max-width: 560px) {
+      filter: drop-shadow(9vw 4vw rgb(0, 25, 26));
+    }
+
     ::before {
       content: "";
       width: 20px;
